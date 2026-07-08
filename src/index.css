@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "BabyGemoy";
+  src: url("./assets/fonts/BabyGemoy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo-font {
+  font-family: "BabyGemoy", sans-serif;
+}

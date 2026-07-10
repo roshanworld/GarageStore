@@ -19,7 +19,7 @@ function Navbar() {
 
 
 
-      <div className="flex items-center justify-around px-4 py-3 w-full">
+      <div className="flex items-center justify-between px-4 py-3 w-full sm:flex sm:justify-center ">
   <nav>
     <ul className="flex justify-center flex-wrap gap-4 text-amber-500 sm:flex sm:justify-center">
       <li>HOME</li>
@@ -29,13 +29,19 @@ function Navbar() {
       <li>CONTACT</li>
     </ul>
   </nav>
-
-  <button
+<div>
+<button
     onClick={toggleAudio}
     className="px-3 py-2 bg-black text-white rounded"
   >
     {isOn ? "🔊" : "🔇"}
   </button>
+  <audio ref={audioRef} loop>
+    <source src="/musicforest.mp3" type="audio/mpeg" /> 
+  </audio>
+  
+</div>
+  
 </div>
   </>
     

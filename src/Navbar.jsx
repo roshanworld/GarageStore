@@ -17,10 +17,10 @@ function Navbar() {
   return (
   <>
 
-  <div className="flex justify-between items-center ">
+  {/* <div className="flex justify-between items-center ">
    
         <nav>
-          <ul className="flex text-amber-500 gap-5">
+          <ul className="flex text-amber-500  md:flex gap-5">
             <li className="hover:text-amber-700">HOME</li>
             <li className="hover:text-amber-700">ABOUT</li>
             <li className="hover:text-amber-700">SERVICES</li>
@@ -41,7 +41,26 @@ function Navbar() {
         <audio ref={audioRef} loop>
           <source src="/musicforest.mp3" type="audio/mpeg" />
         </audio>
-      </div>
+      </div> */}
+
+      <div className="flex items-center justify-between px-4 py-3 w-full">
+  <nav>
+    <ul className="flex justify-center flex-wrap gap-4 text-amber-500">
+      <li>HOME</li>
+      <li>ABOUT</li>
+      <li>SERVICES</li>
+      <li>REVIEW</li>
+      <li>CONTACT</li>
+    </ul>
+  </nav>
+
+  <button
+    onClick={toggleAudio}
+    className="px-3 py-2 bg-black text-white rounded"
+  >
+    {isOn ? "🔊" : "🔇"}
+  </button>
+</div>
   </>
     
         

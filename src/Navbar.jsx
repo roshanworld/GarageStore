@@ -45,7 +45,7 @@ function Navbar() {
 
       <div className="flex items-center justify-between px-4 py-3 w-full">
   <nav>
-    <ul className="flex justify-center flex-wrap gap-4 text-amber-500">
+    <ul className="flex justify-center flex-wrap gap-4 text-amber-500 sm:flex sm:justify-center">
       <li>HOME</li>
       <li>ABOUT</li>
       <li>SERVICES</li>
